@@ -8,6 +8,10 @@ public class CharacterController : MonoBehaviour
 
     public float moveSpeed = 10;
     public Rigidbody2D rb;
+    public GameObject doorOpener;
+    public GameObject doorKey;
+    public GameObject closedDoor;
+
     private Vector2 moveDirection;
     // Update is called once per frame
     void Update(){
@@ -30,4 +34,22 @@ public class CharacterController : MonoBehaviour
     {
         rb.velocity = new Vector2(moveDirection.x*moveSpeed,moveDirection.y*moveSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Key"))
+        {
+            doorKey.SetActive(false);
+            doorOpener.SetActive(true);
+
+        }
+
+        if (other.CompareTag("DoorOpener"))
+        {
+            closedDoor.SetActive(false);
+        }
+
+        
+    }
+
+
 }
