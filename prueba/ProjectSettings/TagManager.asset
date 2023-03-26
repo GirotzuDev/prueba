@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - object0
-  - object1
-  - object2
-  - object3
-  - object4
+  - DoorOpener
+  - Key
+  - pruebaObjeto
   layers:
   - Default
   - TransparentFX
@@ -16,7 +14,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Obstacle
   - 
   - 
   - 
