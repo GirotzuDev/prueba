@@ -5,10 +5,15 @@ using UnityEngine;
 public class OpenDoors : MonoBehaviour
 {
     public GameObject closedDoor;
+    public CharacterController characterController;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        characterController = FindObjectOfType<CharacterController>();
+
         
     }
 
@@ -22,6 +27,7 @@ public class OpenDoors : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             closedDoor.SetActive(false);
+            Debug.Log(characterController.moveSpeed);
         }
     }
 
@@ -31,4 +37,5 @@ public class OpenDoors : MonoBehaviour
             closedDoor.SetActive(true);
         }
     }
+
 }
