@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 96800647}
   - component: {fileID: 96800646}
   - component: {fileID: 96800645}
+  - component: {fileID: 96800648}
   m_Layer: 0
   m_Name: PuertaCollider
   m_TagString: DoorOpener
@@ -318,6 +319,19 @@ Transform:
   m_Father: {fileID: 534048312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96800648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96800643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7703060239aaa1418dd36033cc9deb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closedDoor: {fileID: 1485318570}
 --- !u!1 &101830722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,7 +1391,6 @@ MonoBehaviour:
   rb: {fileID: 631649684}
   doorOpener: {fileID: 96800643}
   doorKey: {fileID: 1587693425}
-  closedDoor: {fileID: 1485318570}
 --- !u!1 &950206634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399a307a8ae754e49b2361c620d83ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cerrada: {fileID: 0}
 --- !u!61 &1082157148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1837,10 +1849,9 @@ GameObject:
   - component: {fileID: 1485318575}
   - component: {fileID: 1485318574}
   - component: {fileID: 1485318573}
-  - component: {fileID: 1485318572}
   - component: {fileID: 1485318571}
   m_Layer: 0
-  m_Name: PuertaCerrada
+  m_Name: "PuertaBa\xF1o1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1867,19 +1878,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1485318572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485318570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 399a307a8ae754e49b2361c620d83ac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cerrada: {fileID: 0}
 --- !u!61 &1485318573
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2031,7 +2029,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

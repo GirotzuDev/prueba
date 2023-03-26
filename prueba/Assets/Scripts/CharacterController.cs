@@ -10,7 +10,6 @@ public class CharacterController : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject doorOpener;
     public GameObject doorKey;
-    public GameObject closedDoor;
 
     private Vector2 moveDirection;
     // Update is called once per frame
@@ -43,12 +42,6 @@ public class CharacterController : MonoBehaviour
 
         }
 
-        if (other.CompareTag("DoorOpener"))
-        {
-            closedDoor.SetActive(false);
-        }
-
-        
     }
 
 
