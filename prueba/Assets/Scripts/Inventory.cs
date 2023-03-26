@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -25,10 +26,12 @@ public class Inventory : MonoBehaviour
         {
             items.Add(item);
             UpdateInventoryText();
+            UnityEngine.Debug.Log(items.Count);
         }
         else
         {
-            Debug.Log("Inventory is full!");
+            UnityEngine.Debug.Log(items.Count);
+            UnityEngine.Debug.Log("Inventory is full!");
         }
     }
 
@@ -41,7 +44,16 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            Debug.Log("Item not found in inventory!");
+            UnityEngine.Debug.Log("Item not found in inventory!");
+        }
+    }
+
+    public void ShowInventoryItems()
+    {
+        UnityEngine.Debug.Log("Inventory Items:");
+        foreach (GameObject item in items)
+        {
+            UnityEngine.Debug.Log("- " + item.name);
         }
     }
 }
