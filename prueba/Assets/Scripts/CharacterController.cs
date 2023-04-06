@@ -39,7 +39,6 @@ public class CharacterController : MonoBehaviour
         {
             doorKey.SetActive(false);
             doorOpener.SetActive(true);
-
         }
 
     }

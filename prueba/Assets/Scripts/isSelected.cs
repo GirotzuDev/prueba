@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class isSelected : MonoBehaviour
 {
+    public bool pista = false;
     private bool playerIn = false;
     [SerializeField] private GameObject dialog;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines; 
