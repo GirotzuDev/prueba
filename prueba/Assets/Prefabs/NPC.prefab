@@ -236,11 +236,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578fba066a308eb43aaca7178cc8b1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pista: 0
+  locked: 0
   dialogPanel: {fileID: 0}
   dialogText: {fileID: 0}
   dialog: {fileID: 834687505019589392}
   dialogLines:
-  - Hi mr careverga, this is the history of the night
+  - Hola, esta es la primera frase del texto
   - Tengo hambre y ganas de comer
-  - Hola Juan
+  - 'Usenme con justicia
+
+'
   delayTime: 0.05
