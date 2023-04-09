@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject doorOpener;
     public GameObject doorKey;
+    public bool inDialogue = false;
 
     private Vector2 moveDirection;
     // Update is called once per frame

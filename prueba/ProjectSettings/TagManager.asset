@@ -7,6 +7,7 @@ TagManager:
   - DoorOpener
   - Key
   - pruebaObjeto
+  - Puerta
   layers:
   - Default
   - TransparentFX

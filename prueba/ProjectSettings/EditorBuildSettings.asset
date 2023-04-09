@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PruebasMao.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/H2010s.unity
+    guid: 2afc87993d18a7c4d950d2376bca0731
+  - enabled: 1
+    path: Assets/Scenes/H50s.unity
+    guid: a606b6e1078d5cc40b54c337e85435b2
+  - enabled: 1
+    path: Assets/Scenes/H80s.unity
+    guid: 222e2227ca6aed14ba6158513516fc2c
   m_configObjects: {}

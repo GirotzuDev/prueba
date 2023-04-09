@@ -95,12 +95,14 @@ public class canDialogue : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GetComponent<Collider2D>().CompareTag("Player"))
+
+        if(other.GetComponent<Collider2D>().CompareTag("Player") && !other.gameObject.GetComponent<CharacterController>().inDialogue)
         {
             playerIn = true;
             //player = GameObject.Find(Collider2D.name);
            // Debug.Log(player.transform);
             dialog.SetActive(true);
+            other.gameObject.GetComponent<CharacterController>().inDialogue = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -109,6 +111,7 @@ public class canDialogue : MonoBehaviour
         {
             playerIn = false;
             dialog.SetActive(false);
+            other.gameObject.GetComponent<CharacterController>().inDialogue = false;
         }
     }
 
